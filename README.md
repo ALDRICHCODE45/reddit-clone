@@ -1,5 +1,7 @@
-<p align="center">
-  <a  target="blank"><img src="./public/Next.js_wordmark_dark.svg" width="400" alt="Next Logo" /></a>
+<p align="between">
+  <img src="./public/readme/Next.js_wordmark_dark.svg" width="200" alt="Next Logo" />
+  <img src="./public/readme/tailwindcss.svg" width="200" alt="Tailwind Logo" />
+  <img src="./public/readme/postgresql.svg" width="200" alt="postgres Logo" />
 </p>
 
 
