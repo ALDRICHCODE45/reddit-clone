@@ -1,5 +1,5 @@
 <p align="center">
-  <a  target="blank"><img src="./public/Next.js_wordmark_light.svg" width="400" alt="Next Logo" /></a>
+  <a  target="blank"><img src="./public/Next.js_wordmark_dark.svg" width="400" alt="Next Logo" /></a>
 </p>
 
 
