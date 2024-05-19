@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="./public/Next.js_wordmark_light.svg" width="200" alt="Nest Logo" /></a>
+  <a  target="blank"><img src="./public/Next.js_wordmark_light.svg" width="400" alt="Next Logo" /></a>
 </p>
 
 
@@ -12,18 +12,19 @@
 ```
 yarn install
 ```
-3. Tener Nest CLI instalado
-```
-npm i -g @nestjs/cli
-```
 
 
 4. Levantar la base de datos
 ```
-docker-compose up -d
+npx prisma init
+npx prisma db push
+npx prisma generate
+npx prisma studio
 ```
 
 
 ## Stack
-* MongoDB
-* NestJs
+* NextJs
+* SupaBase
+* Tailwind
+* ShadCn
