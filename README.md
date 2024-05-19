@@ -1,7 +1,10 @@
 <p align="center">
+<div>
   <img src="./public/readme/Next.js_wordmark_dark.svg" width="200" alt="Next Logo" />
   <img src="./public/readme/tailwindcss.svg" width="200" alt="Tailwind Logo" />
   <img src="./public/readme/postgresql.svg" width="200" alt="postgres Logo" />
+
+</div>
 </p>
 
 
