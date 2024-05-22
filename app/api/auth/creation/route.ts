@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
 
-  if (!user || user === null || !user.id)
+  if (!user || !user.id)
     throw new Error("something went wrong please try again");
 
   let dbUser = await prisma.user.findUnique({
