@@ -4,8 +4,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { generateUsername } from "unique-username-generator";
 import { unstable_noStore as noStore } from "next/cache";
 
-noStore();
 export async function GET(req: NextRequest) {
+  noStore();
   const { getUser } = getKindeServerSession();
   const user = await getUser();
 
