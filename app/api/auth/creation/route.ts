@@ -30,6 +30,7 @@ export async function GET(req: NextRequest) {
       },
     });
   }
+  const a = "";
 
   return NextResponse.redirect(
     process.env.NODE_ENV === "development"
