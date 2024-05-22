@@ -7,7 +7,12 @@ export const getUserInformation = async (id: string) => {
     const user = await prisma.user.findUnique({
       where: { id },
     });
-    if (!user) throw new Error(`user with id ${id} does not exists`);
+    if (!user) {
+      return {
+        ok: false,
+        msg: "you must have an account",
+      };
+    }
     return {
       ok: true,
       user,

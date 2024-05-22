@@ -14,12 +14,17 @@ export const createCommunity = async (prevState: any, formData: FormData) => {
     }
     const name = formData.get("name") as string;
 
-    await prisma.subreddit.create({
+    const community = await prisma.subreddit.create({
       data: {
         name: name,
         userId: kindeUser.id,
       },
     });
+    return {
+      status: "success",
+      msg: "Community created successfully",
+      id: community.id,
+    };
   } catch (e) {
     /* handle error */
     if (e instanceof Prisma.PrismaClientKnownRequestError) {
@@ -30,5 +35,4 @@ export const createCommunity = async (prevState: any, formData: FormData) => {
       };
     }
   }
-  return redirect("/");
 };

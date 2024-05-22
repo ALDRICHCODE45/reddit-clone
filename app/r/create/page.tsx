@@ -15,9 +15,10 @@ export interface pageProps {}
 const initialState = {
   msg: "",
   status: "",
+  id: "",
 };
 
-export default function page({}: pageProps): ReactElement {
+export default function Page({}: pageProps): ReactElement {
   const [state, formAction] = useFormState(createCommunity, initialState);
 
   const { toast } = useToast();
@@ -29,6 +30,14 @@ export default function page({}: pageProps): ReactElement {
         description: state.msg,
         variant: "destructive",
       });
+    }
+    if (state?.status === "success") {
+      toast({
+        title: "Success",
+        description: state?.msg,
+        variant: "default",
+      });
+      redirect(`/r/${state.id}`);
     }
   }, [state, toast]);
 
