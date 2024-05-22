@@ -2,8 +2,10 @@ import prisma from "@/lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { NextResponse } from "next/server";
 import { generateUsername } from "unique-username-generator";
+import { unstable_noStore as no_store } from "next/cache";
 
 export async function GET() {
+  no_store();
   const { getUser } = getKindeServerSession();
   const user = await getUser();
   if (!user || user === null || !user.id)

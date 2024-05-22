@@ -3,7 +3,6 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
 import { type ReactElement } from "react";
 import { SettingsForm } from "./ui/SettingsForm";
-import { User } from "@/interfaces";
 
 export interface pageProps {}
 

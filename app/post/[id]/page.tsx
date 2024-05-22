@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { type ReactElement } from "react";
+import { unstable_noStore } from "next/cache";
 
 export interface PostPageProps {
   params: {
@@ -19,6 +20,7 @@ export interface PostPageProps {
 }
 
 async function getData(postId: string) {
+  unstable_noStore();
   const data = await prisma.post.findUnique({
     where: {
       id: postId,
