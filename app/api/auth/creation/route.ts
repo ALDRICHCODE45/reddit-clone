@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { generateUsername } from "unique-username-generator";
 import { unstable_noStore as noStore } from "next/cache";
 
-export async function GET(req: NextRequest) {
+export async function GET(_req: NextRequest) {
   noStore();
   const { getUser } = getKindeServerSession();
   const user = await getUser();
@@ -30,7 +30,6 @@ export async function GET(req: NextRequest) {
       },
     });
   }
-  const a = "";
 
   return NextResponse.redirect(
     process.env.NODE_ENV === "development"
