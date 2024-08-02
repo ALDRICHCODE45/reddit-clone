@@ -31,9 +31,5 @@ export async function GET(_req: NextRequest) {
     });
   }
 
-  return NextResponse.redirect(
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000/"
-      : "https://reddit-clone-iota-tawny.vercel.app"
-  );
+  return NextResponse.redirect("https://reddit-clone-iota-tawny.vercel.app");
 }
