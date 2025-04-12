@@ -85,7 +85,7 @@ export default function Home({
             <Separator className="my-5" />
             <div className="flex flex-col gap-3 my-2">
               <Button asChild variant="secondary">
-                <Link href="/r/6ded0c7b-ad9b-4002-833e-199f92f08816/create">
+                <Link href="/r/d9a6a68e-e4fb-4e8d-8dbb-25510084e34e/create">
                   Create Post
                 </Link>
               </Button>

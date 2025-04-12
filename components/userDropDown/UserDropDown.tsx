@@ -39,7 +39,10 @@ export function UserDropDown({ image }: UserDropDownProps): ReactElement {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link className="w-full" href="/create">
+          <Link
+            className="w-full"
+            href="/r/d9a6a68e-e4fb-4e8d-8dbb-25510084e34e/create"
+          >
             Create Post
           </Link>
         </DropdownMenuItem>
